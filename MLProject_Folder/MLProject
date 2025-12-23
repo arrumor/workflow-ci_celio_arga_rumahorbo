@@ -1,0 +1,9 @@
+name: Eksperimen_Otomatis
+
+# Lingkungan yang digunakan
+conda_env: conda.yaml
+
+# Titik masuk (Entry Point) untuk menjalankan training
+entry_points:
+  main:
+    command: "python modelling.py"
