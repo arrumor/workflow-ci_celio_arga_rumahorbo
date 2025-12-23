@@ -1,0 +1,41 @@
+name: MLflow Auto-Training
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: write 
+
+jobs:
+  run-training:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install Dependencies
+      run: |
+        pip install mlflow pandas scikit-learn numpy
+        # Tambahkan library lain jika modelling.py membutuhkannya
+
+    - name: Run MLflow Project
+      run: |
+        cd Workflow-CI/MLProject_Folder
+        
+        mlflow run . --env-manager local --experiment-name "Eksperimen Model Hyperparameter Tuning"
+
+    - name: Commit and Push Results
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+        git add .
+        git commit -m "Auto-update artifacts from GitHub Actions" || echo "No changes to commit"
+        git push
