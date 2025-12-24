@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/workflow-ci_celio_arga_rumahorbo/workflow-ci_celio_arga_rumahorbo/MLProject_Folder/mlruns/305431741543650919/bd0b84cd9c2d4b42a1a4a607c54add04/artifacts
+end_time: 1766535794456
+entry_point_name: ''
+experiment_id: '305431741543650919'
+lifecycle_stage: active
+run_id: bd0b84cd9c2d4b42a1a4a607c54add04
+run_name: upset-elk-365
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766535724692
+status: 3
+tags: []
+user_id: runner

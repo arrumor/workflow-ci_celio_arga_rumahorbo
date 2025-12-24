@@ -1,0 +1,10 @@
+artifact_location: file:///home/runner/work/workflow-ci_celio_arga_rumahorbo/workflow-ci_celio_arga_rumahorbo/MLProject_Folder/mlruns/305431741543650919/models/m-4f12fe3fa656421fad3307a7d645878c/artifacts
+creation_timestamp: 1766535730250
+experiment_id: '305431741543650919'
+last_updated_timestamp: 1766535731955
+model_id: m-4f12fe3fa656421fad3307a7d645878c
+model_type: null
+name: model_random_forest
+source_run_id: 59bccff5ee1e4d4ea05d39f36602a972
+status: 2
+status_message: null
