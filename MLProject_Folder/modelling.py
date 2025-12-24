@@ -12,7 +12,7 @@ tracking_path = Path(os.getcwd(), "mlruns")
 mlflow.set_tracking_uri(tracking_path.as_uri())
 
 # Load data
-df = pd.read_csv('water_potability.csv')
+df = pd.read_csv('water_potability_preprocessing.csv')
 
 # Mengisi nilai yang kosong dengan rata-rata kolom masing-masing
 df.fillna(df.mean(), inplace=True)
@@ -46,9 +46,9 @@ for n in n_estimators_list:
                 
                 with mlflow.start_run(run_name=run_name, nested=True):
                     # Log info dataset
-                    dataset = mlflow.data.from_pandas(df, source="water_potability.csv")
+                    dataset = mlflow.data.from_pandas(df, source="water_potability_preprocessing.csv")
                     mlflow.log_input(dataset, context="training")
-                    mlflow.log_param("dataset_name", "water_potability.csv")
+                    mlflow.log_param("dataset_name", "water_potability_preprocessing.csv")
 
                     # Training model
                     model = RandomForestClassifier(
@@ -81,3 +81,4 @@ for n in n_estimators_list:
                     )
 
                     print(f"Selesai: n={n}, depth={depth} -> Acc={accuracy_score(y_test, y_pred):.4f}")
+
