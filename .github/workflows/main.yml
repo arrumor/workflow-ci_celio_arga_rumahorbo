@@ -25,10 +25,20 @@ jobs:
         pip install mlflow pandas scikit-learn numpy
         # Tambahkan library lain jika modelling.py membutuhkannya
 
-    - name: Run MLflow Project
+    - name: Debug repository contents
       run: |
-        cd Workflow-CI/MLProject_Folder
-        
+        echo "GITHUB_WORKSPACE = $GITHUB_WORKSPACE"
+        pwd
+        ls -la
+        echo "Isi folder Workflow-CI (jika ada):"
+        ls -la Workflow-CI || echo "Workflow-CI not found"
+        echo "Cek MLProject_Folder:"
+        ls -la Workflow-CI/MLProject_Folder || echo "Workflow-CI/MLProject_Folder not found"
+
+    - name: Run MLflow Project
+      # lebih aman pakai working-directory daripada cd
+      working-directory: Workflow-CI/MLProject_Folder
+      run: |
         mlflow run . --env-manager local --experiment-name "Eksperimen Model Hyperparameter Tuning"
 
     - name: Commit and Push Results
