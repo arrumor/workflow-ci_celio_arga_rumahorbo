@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/workflow-ci_celio_arga_rumahorbo/workflow-ci_celio_arga_rumahorbo/MLProject_Folder/mlruns/305431741543650919/de6dd81c16ef452aaaf44c3b69253b60/artifacts
+end_time: 1766538875326
+entry_point_name: ''
+experiment_id: '305431741543650919'
+lifecycle_stage: active
+run_id: de6dd81c16ef452aaaf44c3b69253b60
+run_name: RF_n10_d3_split2_leaf2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766538873715
+status: 3
+tags: []
+user_id: runner

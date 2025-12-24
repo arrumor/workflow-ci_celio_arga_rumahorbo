@@ -1,0 +1,13 @@
+digest: f91526cd
+name: dataset
+profile: '{"num_rows": 3276, "num_elements": 32760}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "ph", "required": true}, {"type":
+  "double", "name": "Hardness", "required": true}, {"type": "double", "name": "Solids",
+  "required": true}, {"type": "double", "name": "Chloramines", "required": true},
+  {"type": "double", "name": "Sulfate", "required": true}, {"type": "double", "name":
+  "Conductivity", "required": true}, {"type": "double", "name": "Organic_carbon",
+  "required": true}, {"type": "double", "name": "Trihalomethanes", "required": true},
+  {"type": "double", "name": "Turbidity", "required": true}, {"type": "long", "name":
+  "Potability", "required": true}]}'
+source: '{"uri": "water_potability_preprocessing.csv"}'
+source_type: local

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/workflow-ci_celio_arga_rumahorbo/workflow-ci_celio_arga_rumahorbo/MLProject_Folder/mlruns/305431741543650919/ca2eed62d47b41f481342017bf632918/artifacts
+end_time: 1766538939888
+entry_point_name: ''
+experiment_id: '305431741543650919'
+lifecycle_stage: active
+run_id: ca2eed62d47b41f481342017bf632918
+run_name: adaptable-rat-215
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766538870376
+status: 3
+tags: []
+user_id: runner
